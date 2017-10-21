@@ -1,0 +1,16 @@
+server:
+  port: 8764
+#eureka:
+#  client:
+#    service-url:
+#     defaultZone: http://localhost:8761
+#spring:
+#  application:
+#    name: service-ribbon
+
+service-hi:
+  ribbon:
+    eureka:
+      enabled: false
+    listOfServers: localhost:8762,localhost:8763
+    ServerListRefreshInterval: 15000
